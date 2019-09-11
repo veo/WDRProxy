@@ -49,7 +49,7 @@ func (this *handle) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 	query ,_ := url.PathUnescape(r.URL.String())
 	postdata ,_ := url.PathUnescape(string(post))
-	if checkkeywords(query)||checkkeywords(postdata){
+	if (checkkeywords(query)||checkkeywords(postdata)) && cmd.waf == "yes"{
 		fmt.Fprintln(w,"stop hacking")
 		log.SetOutput(highlogFile)
 		if string(post) != ""{
