@@ -13,6 +13,7 @@ func parseCmd() Cmd {
 	var cmd Cmd
 	flag.StringVar(&cmd.bind, "l", "0.0.0.0:8080", "listen on ip:port")
 	flag.StringVar(&cmd.remote, "r", "https://www.xunblog.com", "reverse proxy addr")
+	flag.StringVar(&cmd.waf, "waf", "no", "use waf yes or no")
 	//flag.StringVar(&cmd.ip, "ip", "", "reverse proxy addr server ip")
 	flag.Parse()
 	return cmd
