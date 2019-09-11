@@ -9,7 +9,7 @@ WDRProxy is a simple forward proxy tool with WAF and CDN functions
 	
 	Usage of WDRProxy_[OS]_[ARCH]:
 	  -l string
-	        listen on ip:port (default "0.0.0.0:8888")
+	        listen on ip:port (default "0.0.0.0:8080")
 	  -r string
 	        reverse proxy addr (default "http://www.xunblog.com")
 
