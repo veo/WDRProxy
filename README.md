@@ -1,7 +1,7 @@
 # WDRProxy
 WDRProxy in golang
 
-WDRProxy is a simple ReverseProxy with WAF and CDN
+WDRProxy is a simple forward proxy tool with WAF and CDN functions
 
 ## Use:
 
